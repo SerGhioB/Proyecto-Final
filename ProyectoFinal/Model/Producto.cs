@@ -21,6 +21,8 @@ namespace ProyectoFinal.Model
         public virtual Categoria Categoria { get; set; }
         public virtual TipoEmpaque TipoEmpaque { get; set; }
         public virtual ICollection<DetalleCompra> DetalleCompras { get; set; }
+        public virtual ICollection<DetalleFactura> DetalleFacturas { get; set; }
+
 
 
     }

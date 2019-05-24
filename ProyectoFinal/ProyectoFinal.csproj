@@ -60,9 +60,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Compra.cs" />
     <Compile Include="Model\DetalleCompra.cs" />
+    <Compile Include="Model\DetalleFactura.cs" />
+    <Compile Include="Model\EmailCliente.cs" />
+    <Compile Include="Model\EmailProveedor.cs" />
+    <Compile Include="Model\Factura.cs" />
     <Compile Include="Model\Inventario.cs" />
     <Compile Include="Model\Producto.cs" />
+    <Compile Include="Model\TelefonoCliente.cs" />
+    <Compile Include="Model\TelefonoProveedor.cs" />
     <Compile Include="View\CategoriaView.xaml.cs">
       <DependentUpon>CategoriaView.xaml</DependentUpon>
     </Compile>

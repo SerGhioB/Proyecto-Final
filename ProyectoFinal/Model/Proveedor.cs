@@ -14,6 +14,11 @@ namespace ProyectoFinal.Model
         public string Direccion { get; set; }
         public string PaginaWeb { get; set; }
         public string ContactoPrincipal { get; set; }
+        public virtual ICollection<EmailProveedor> EmailProveedores { get; set; }
+        public virtual ICollection<Compra> Compras { get; set; }
+        public virtual ICollection<TelefonoProveedor> TelefonoProveedores { get; set; }
+
+
 
     }
 }

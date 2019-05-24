@@ -12,5 +12,9 @@ namespace ProyectoFinal.Model
         public string DPI { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
+        public virtual ICollection<Factura> Facturas { get; set; }
+        public virtual ICollection<EmailCliente> EmailClientes { get; set; }
+        public virtual ICollection<TelefonoCliente> TelefonoClientes { get; set; }
+
     }
 }

@@ -9,7 +9,7 @@ namespace ProyectoFinal.Model
     public class Compra
     {
         public int IdCompra { get; set; }
-        public int NumeroDescuento { get; set; }
+        public int NumeroDocumento { get; set; }
         public int CodigoProveedor { get; set; }
         public DateTime Fecha { get; set; }
         public decimal Total { get; set; }

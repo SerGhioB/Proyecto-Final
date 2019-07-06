@@ -9,8 +9,9 @@ using System.Collections.ObjectModel;
 
 namespace ProyectoFinal.ModelView
 {
-    class ClienteModelView : INotifyPropertyChanged
+    public class ClienteModelView : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
         private ObservableCollection<Cliente> _Cliente;   /*Variable*/
         
         private ObservableCollection<Cliente> Clientes   /*Propiedad*/
@@ -25,7 +26,7 @@ namespace ProyectoFinal.ModelView
             this.Titulo = "Cliente";        
         }
         public string Titulo { get; set; }
-        public event ProgressChangedEventHandler PropertyChanged;
+        
 
     }
 }

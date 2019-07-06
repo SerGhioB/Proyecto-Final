@@ -32,7 +32,7 @@ namespace ProyectoFinal.Model
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<Categoria>()
                 .ToTable("Categoria")
-                .HasKey(c => new { c.CodigoCategoria })
+                .HasKey(c => new { c.CodigoCategoria})
                 .Property(c => c.Descripcion)
                 .IsRequired();
         

@@ -16,14 +16,14 @@ using ProyectoFinal.ModelView;
 namespace ProyectoFinal.View
 {
     /// <summary>
-    /// Interaction logic for TipoEmpaqueView.xaml
+    /// Interaction logic for FacturaView.xaml
     /// </summary>
-    public partial class TipoEmpaqueView
+    public partial class FacturaView : Window
     {
-        public TipoEmpaqueView()
+        public FacturaView()
         {
             InitializeComponent();
-            this.DataContext = new TipoEmpaqueModelView();
+            this.DataContext = new FacturaModelView();
         }
     }
 }

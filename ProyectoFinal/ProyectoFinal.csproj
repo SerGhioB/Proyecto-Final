@@ -34,15 +34,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -60,16 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ModelView\CompraModelView.cs" />
-    <Compile Include="ModelView\DetalleCompraModelView.cs" />
-    <Compile Include="ModelView\DetalleFacturaModelView.cs" />
-    <Compile Include="ModelView\EmailClienteModelView.cs" />
-    <Compile Include="ModelView\EmailProveedorModelView.cs" />
-    <Compile Include="ModelView\FacturaModelView.cs" />
-    <Compile Include="ModelView\InventarioModelView.cs" />
-    <Compile Include="ModelView\ProductoModelView.cs" />
-    <Compile Include="ModelView\TelefonoClienteModelView.cs" />
-    <Compile Include="ModelView\TelefonoProveedorModelView.cs" />
+    <Compile Include="ModelView\MainModelView.cs" />
     <Compile Include="Model\Compra.cs" />
     <Compile Include="Model\DetalleCompra.cs" />
     <Compile Include="Model\DetalleFactura.cs" />
@@ -86,38 +86,8 @@
     <Compile Include="View\ClienteView.xaml.cs">
       <DependentUpon>ClienteView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CompraView.xaml.cs">
-      <DependentUpon>CompraView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DetalleCompraView.xaml.cs">
-      <DependentUpon>DetalleCompraView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\DetalleFacturaView.xaml.cs">
-      <DependentUpon>DetalleFacturaView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\EmailClienteView.xaml.cs">
-      <DependentUpon>EmailClienteView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\EmailProveedorView.xaml.cs">
-      <DependentUpon>EmailProveedorView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\FacturaView.xaml.cs">
-      <DependentUpon>FacturaView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\InventarioView.xaml.cs">
-      <DependentUpon>InventarioView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ProductoView.xaml.cs">
-      <DependentUpon>ProductoView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\ProveedorView.xaml.cs">
       <DependentUpon>ProveedorView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TelefonoClienteView.xaml.cs">
-      <DependentUpon>TelefonoClienteView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TelefonoProveedorView.xaml.cs">
-      <DependentUpon>TelefonoProveedorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TipoEmpaqueView.xaml.cs">
       <DependentUpon>TipoEmpaqueView.xaml</DependentUpon>
@@ -142,47 +112,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CompraView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DetalleCompraView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\DetalleFacturaView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\EmailClienteView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\EmailProveedorView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\FacturaView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\InventarioView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ProductoView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\ProveedorView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\TelefonoClienteView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\TelefonoProveedorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

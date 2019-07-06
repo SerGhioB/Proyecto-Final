@@ -16,14 +16,14 @@ using ProyectoFinal.ModelView;
 namespace ProyectoFinal.View
 {
     /// <summary>
-    /// Interaction logic for TipoEmpaqueView.xaml
+    /// Interaction logic for EmailProveedorView.xaml
     /// </summary>
-    public partial class TipoEmpaqueView
+    public partial class EmailProveedorView : Window
     {
-        public TipoEmpaqueView()
+        public EmailProveedorView()
         {
             InitializeComponent();
-            this.DataContext = new TipoEmpaqueModelView();
+            this.DataContext = new EmailProveedorModelView();
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
 using ProyectoFinal.ModelView;
 
 namespace ProyectoFinal.View
@@ -18,7 +19,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for CategoriaView.xaml
     /// </summary>
-    public partial class CategoriaView : Window
+    public partial class CategoriaView
     {
         public CategoriaView()
         {

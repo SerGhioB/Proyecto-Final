@@ -131,7 +131,7 @@ namespace ProyectoFinal.ModelView
             }
         }
 
-        private void ChangeNotify(string propertie)
+        public void ChangeNotify(string propertie)
         {
             if (PropertyChanged != null)
             {

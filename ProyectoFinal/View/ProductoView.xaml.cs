@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for ProductoView.xaml
     /// </summary>
-    public partial class ProductoView : Window
+    public partial class ProductoView 
     {
         public ProductoView()
         {

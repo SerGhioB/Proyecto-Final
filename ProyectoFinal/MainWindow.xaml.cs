@@ -45,5 +45,10 @@ namespace ProyectoFinal
         {
             new ProductoView().Show();
         }
+
+        private void InventarioButton_Click(object sender, RoutedEventArgs e)
+        {
+            new InventarioView().Show();
+        }
     }
 }

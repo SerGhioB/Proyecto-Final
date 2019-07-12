@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for DetalleCompraView.xaml
     /// </summary>
-    public partial class DetalleCompraView : Window
+    public partial class DetalleCompraView
     {
         public DetalleCompraView()
         {

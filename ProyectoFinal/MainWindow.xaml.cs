@@ -50,5 +50,10 @@ namespace ProyectoFinal
         {
             new InventarioView().Show();
         }
+
+        private void DetalleCompraButton_Click(object sender, RoutedEventArgs e)
+        {
+            new DetalleCompraView().Show();
+        }
     }
 }

@@ -69,6 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ModelView\DetalleCompraModelView.cs" />
     <Compile Include="ModelView\InventarioModelView.cs" />
     <Compile Include="ModelView\MainModelView.cs" />
     <Compile Include="ModelView\ProductoModelView.cs" />
@@ -84,6 +85,9 @@
     <Compile Include="Model\TelefonoProveedor.cs" />
     <Compile Include="View\CategoriaView.xaml.cs">
       <DependentUpon>CategoriaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetalleCompraView.xaml.cs">
+      <DependentUpon>DetalleCompraView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\InventarioView.xaml.cs">
       <DependentUpon>InventarioView.xaml</DependentUpon>
@@ -109,6 +113,10 @@
     <Page Include="View\CategoriaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetalleCompraView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\InventarioView.xaml">
       <SubType>Designer</SubType>

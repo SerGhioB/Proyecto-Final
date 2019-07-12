@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using ProyectoFinal.Model;
 using System.Collections.ObjectModel;
+using System.Data.Entity;
 using System.Windows.Input;
 using System.Windows;
-using System.Data.Entity;
+
 
 namespace ProyectoFinal.ModelView
 {
+
+   
     class ProductoModelView : INotifyPropertyChanged, ICommand
     {
 
@@ -331,9 +334,95 @@ namespace ProyectoFinal.ModelView
 
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            if (parameter.Equals("Add"))
+            {
+                //MessageBox.Show("Agregar Departamento");                                
+                //this.accion = ACCION.NUEVO;  
+                Producto nuevo = new Producto();
+                nuevo.CodigoCategoria = Convert.ToInt32(this.CodigoCategoria);
+                nuevo.CodigoEmpaque = Convert.ToInt32(this.CodigoEmpaque);
+                nuevo.Descripcion = this.Descripcion;
+                nuevo.PrecioUnitario = Convert.ToDecimal(this.PrecioUnitario);
+                nuevo.PrecioPorDocena = Convert.ToDecimal(this.PrecioPorDocena);
+                nuevo.PrecioPorMayor = Convert.ToDecimal(this.PrecioPorMayor);
+                nuevo.Existencia = Convert.ToInt32(this.Existencia);
+                nuevo.Imagen = this.Imagen;
+                db.Productos.Add(nuevo);
+                db.SaveChanges();
+                this.Productos.Add(nuevo);
+                MessageBox.Show("Registro almacenado");
+
+            }
+            /*if (parameter.Equals("Save"))
+            {
+                switch (this.accion)
+                {
+                    case ACCION.NUEVO:                       
+                        break;
+                }
+            }*/
+
+
+            else if (parameter.Equals("Update"))
+            {
+
+                int posicion = this.Productos.IndexOf(this.SelectProducto);
+                var updateProducto = this.db.Productos.Find(this.SelectProducto.CodigoProducto);                
+                updateProducto.CodigoCategoria = Convert.ToInt32(this.CodigoCategoria);
+                updateProducto.CodigoEmpaque = Convert.ToInt32(this.CodigoEmpaque);
+                updateProducto.Descripcion = this.Descripcion;
+                updateProducto.PrecioUnitario = Convert.ToDecimal(this.PrecioUnitario);
+                updateProducto.PrecioPorDocena = Convert.ToDecimal(this.PrecioPorDocena);
+                updateProducto.PrecioPorMayor = Convert.ToDecimal(this.PrecioPorMayor);
+                updateProducto.Existencia = Convert.ToInt32(this.Existencia);
+                updateProducto.Imagen = this.Imagen;
+                this.db.Entry(updateProducto).State = EntityState.Modified;
+                this.db.SaveChanges();
+                this.Productos.RemoveAt(posicion);
+                this.Productos.Insert(posicion, updateProducto);
+                MessageBox.Show("Registro actualizado");
+
+
+
+                //this.accion = ACCION.ACTUALIZAR;                
+
+            }
+
+            /*if (parameter.Equals("Save"))
+            {
+                switch (this.accion)
+                {
+                    case ACCION.ACTUALIZAR:                       
+                        break;
+                }
+            }*/
+
+            else if (parameter.Equals("Delete"))
+            {
+                if (this.SelectProducto != null)
+                {
+                    var respuesta = MessageBox.Show("¿Esta seguro de eliminar?", "Eliminar", MessageBoxButton.YesNo);
+                    if (respuesta == MessageBoxResult.Yes)
+                    {
+                        try
+                        {
+                            db.Productos.Remove(this.SelectProducto);
+                            db.SaveChanges();
+                            this.Productos.Remove(this.SelectProducto);
+                        }
+                        catch (Exception e)
+                        {
+                            MessageBox.Show(e.Message);
+                        }
+                        MessageBox.Show("Registro eliminado");
+                    }
+                }
+
+            }
+
+
         }
 
-        
+
     }
 }

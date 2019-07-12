@@ -40,5 +40,10 @@ namespace ProyectoFinal
         {
             new TipoEmpaqueView().Show();
         }
+
+        private void ProductoButton_Click(object sender, RoutedEventArgs e)
+        {
+            new ProductoView().Show();
+        }
     }
 }

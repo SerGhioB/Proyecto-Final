@@ -8,7 +8,45 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Label Content="{Binding Titulo}" Grid.Row="0"/>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Codigo Categoria" Grid.Row="0" Grid.Column="0"/>
+        <TextBox Grid.Row="0" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyCodigoCategoria}" Text="{Binding CodigoCategoria}"/>
+        <Label Content="Codigo Empaque" Grid.Row="1" Grid.Column="0"/>
+        <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyCodigoEmpaque}" Text="{Binding CodigoEmpaque}"/>
+        <Label Content="Descripcion" Grid.Row="2" Grid.Column="0"/>
+        <TextBox Grid.Row="2" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyDescripcion}" Text="{Binding Descripcion}"/>
+        <Label Content="Precio Unitario" Grid.Row="3" Grid.Column="0"/>
+        <TextBox Grid.Row="3" Grid.Column="1" IsReadOnly="{Binding IsReadnOnlyPrecioUnitario}" Text="{Binding PrecioUnitario}"/>
+        <Label Content="Precio Por Mayor" Grid.Row="4" Grid.Column="0"/>
+        <TextBox Grid.Row="4" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyPrecioPorMayor}" Text="{Binding PrecioPorMayor}"/>
+        <Label Content="Precio Por Docena" Grid.Row="5" Grid.Column="0"/>
+        <TextBox Grid.Row="5" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyPrecioPorDocena}" Text="{Binding PrecioPorDocena}"/>
+        <Label Content="Existencia" Grid.Row="6" Grid.Column="0"/>
+        <TextBox Grid.Row="6" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyExistencia}" Text="{Binding Existencia}"/>
+        <Label Content="Imagen" Grid.Row="7" Grid.Column="0"/>
+        <TextBox Grid.Row="7" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyImagen}" Text="{Binding Imagen}"/>
+
+        <DataGrid SelectedItem="{Binding SelectProducto}" ItemsSource="{Binding Productos}" Grid.Row="8" Grid.ColumnSpan="2">
+        </DataGrid>
+        <StackPanel Grid.Row="9" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button IsEnabled="{Binding IsEnableAdd}" Content="Add" Command="{Binding Instancia}" CommandParameter="Add"/>
+            <Button IsEnabled="{Binding IsEnableDelete}" Content="Delete" Command="{Binding Instancia}" CommandParameter="Delete"/>
+            <Button IsEnabled="{Binding IsEnableUpdate}" Content="Update" Command="{Binding Instancia}" CommandParameter="Update "/>
+            <Button  IsEnabled="{Binding IsEnableSave}" Content="Save" Command="{Binding Instancia}" CommandParameter="Save"/>
+            <Button  IsEnabled="{Binding IsEnableCancel}" Content="Cancel" Command="{Binding Instancia}" CommandParameter="Cancel"/>
+        </StackPanel>
     </Grid>
 </Controls:MetroWindow>

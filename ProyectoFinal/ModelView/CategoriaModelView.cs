@@ -202,7 +202,7 @@ namespace ProyectoFinal.ModelView
                     var respuesta = MessageBox.Show("¿Esta seguro de eliminar?", "Eliminar", MessageBoxButton.YesNo);
                     if (respuesta == MessageBoxResult.Yes)
                     {
-                        try
+                        try                        
                         {
                             db.Categorias.Remove(this.SelectCategoria);
                             db.SaveChanges();

@@ -8,6 +8,7 @@
         <Controls:WindowCommands>
             <Button Content="Categoria" Click="CategoriaButton_Click"/>
             <Button Content="TipoEmpaque" Click="TipoEmpaqueButton_Click"/>
+            <Button Content="Producto" Click="ProductoButton_Click"/>
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
     

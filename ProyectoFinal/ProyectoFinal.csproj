@@ -84,14 +84,8 @@
     <Compile Include="View\CategoriaView.xaml.cs">
       <DependentUpon>CategoriaView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ClienteView.xaml.cs">
-      <DependentUpon>ClienteView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\ProductoView.xaml.cs">
       <DependentUpon>ProductoView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ProveedorView.xaml.cs">
-      <DependentUpon>ProveedorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TipoEmpaqueView.xaml.cs">
       <DependentUpon>TipoEmpaqueView.xaml</DependentUpon>
@@ -112,17 +106,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ClienteView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\ProductoView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\ProveedorView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\TipoEmpaqueView.xaml">
       <SubType>Designer</SubType>
@@ -131,8 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModelView\CategoriaModelView.cs" />
-    <Compile Include="ModelView\ClienteModelView.cs" />
-    <Compile Include="ModelView\ProveedorModelView.cs" />
     <Compile Include="ModelView\TipoEmpaqueModelView.cs" />
     <Compile Include="Model\Categoria.cs" />
     <Compile Include="Model\Cliente.cs" />

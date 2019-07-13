@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for EmailClienteView.xaml
     /// </summary>
-    public partial class EmailClienteView : Window
+    public partial class EmailClienteView
     {
         public EmailClienteView()
         {

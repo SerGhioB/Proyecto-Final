@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for EmailProveedorView.xaml
     /// </summary>
-    public partial class EmailProveedorView : Window
+    public partial class EmailProveedorView
     {
         public EmailProveedorView()
         {

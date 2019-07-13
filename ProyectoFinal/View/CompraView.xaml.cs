@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for CompraView.xaml
     /// </summary>
-    public partial class CompraView : Window
+    public partial class CompraView
     {
         public CompraView()
         {

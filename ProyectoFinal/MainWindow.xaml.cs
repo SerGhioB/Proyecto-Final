@@ -55,5 +55,50 @@ namespace ProyectoFinal
         {
             new DetalleCompraView().Show();
         }
+
+        private void DetalleFacturaButton_Click(object sender, RoutedEventArgs e)
+        {
+            new DetalleFacturaView().Show();
+        }
+
+        private void EmailProveedorButton_Click(object sender, RoutedEventArgs e)
+        {
+            new EmailProveedorView().Show();
+        }
+
+        private void CompraButton_Click(object sender, RoutedEventArgs e)
+        {
+            new CompraView().Show();
+        }
+
+        private void FacturaButton_Click(object sender, RoutedEventArgs e)
+        {
+            new FacturaView().Show();
+        }
+
+        private void ProveedorButton_Click(object sender, RoutedEventArgs e)
+        {
+            new ProveedorView().Show();
+        }
+
+        private void ClienteButton_Click(object sender, RoutedEventArgs e)
+        {
+            new ClienteView().Show();
+        }
+
+        private void TelefonoProveedorButton_Click(object sender, RoutedEventArgs e)
+        {
+            new TelefonoProveedorView().Show();
+        }
+
+        private void EmailClienteButton_Click(object sender, RoutedEventArgs e)
+        {
+            new EmailClienteView().Show();
+        }
+
+        private void TelefonoClienteButton_Click(object sender, RoutedEventArgs e)
+        {
+            new TelefonoClienteView().Show();
+        }
     }
 }

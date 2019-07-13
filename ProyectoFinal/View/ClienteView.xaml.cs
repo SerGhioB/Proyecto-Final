@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for ClienteView.xaml
     /// </summary>
-    public partial class ClienteView : Window
+    public partial class ClienteView
     {
         public ClienteView()
         {

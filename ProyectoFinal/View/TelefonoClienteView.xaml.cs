@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for TelefonoClienteView.xaml
     /// </summary>
-    public partial class TelefonoClienteView : Window
+    public partial class TelefonoClienteView
     {
         public TelefonoClienteView()
         {

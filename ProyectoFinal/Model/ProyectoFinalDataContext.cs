@@ -24,7 +24,7 @@ namespace ProyectoFinal.Model
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<TelefonoProveedor> TelefonoProveedores { get; set; }
         public DbSet<EmailCliente> EmailClientes { get; set; }
-        public DbSet<TelefonoCliente> TelefonoCliente { get; set; }
+        public DbSet<TelefonoCliente> TelefonoClientes { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

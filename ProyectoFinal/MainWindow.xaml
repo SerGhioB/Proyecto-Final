@@ -11,6 +11,15 @@
             <Button Content="Producto" Click="ProductoButton_Click"/>
             <Button Content="Inventario" Click="InventarioButton_Click"/>
             <Button Content="Detalle Compra" Click="DetalleCompraButton_Click"/>
+            <Button Content="Detalle Factura" Click="DetalleFacturaButton_Click"/>
+            <Button Content="Email Proveedor" Click="EmailProveedorButton_Click"/>
+            <Button Content="Compra" Click="CompraButton_Click"/>
+            <Button Content="Factura" Click="FacturaButton_Click"/>
+            <Button Content="Proveedor" Click="ProveedorButton_Click"/>
+            <Button Content="Cliente" Click="ClienteButton_Click"/>
+            <Button Content="Telefono Proveedor" Click="TelefonoProveedorButton_Click"/>
+            <Button Content="Email Cliente" Click="EmailClienteButton_Click"/>
+            <Button Content="Telefono Cliente" Click="TelefonoClienteButton_Click"/>
         </Controls:WindowCommands>
     </Controls:MetroWindow.RightWindowCommands>
     

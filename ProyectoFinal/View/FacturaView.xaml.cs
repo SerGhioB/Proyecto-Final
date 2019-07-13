@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for FacturaView.xaml
     /// </summary>
-    public partial class FacturaView : Window
+    public partial class FacturaView
     {
         public FacturaView()
         {

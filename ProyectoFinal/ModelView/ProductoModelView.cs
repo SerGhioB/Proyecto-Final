@@ -245,7 +245,7 @@ namespace ProyectoFinal.ModelView
         {
             get
             {
-                return _IsReadOnlyDescripcion;
+                return this._IsReadOnlyDescripcion;
             }
             set
             {
@@ -258,7 +258,7 @@ namespace ProyectoFinal.ModelView
         {
             get
             {
-                return _IsReadnOnlyPrecioUnitario;
+                return this._IsReadnOnlyPrecioUnitario;
             }
             set
             {
@@ -271,7 +271,7 @@ namespace ProyectoFinal.ModelView
         {
             get
             {
-                return _IsReadOnlyPrecioPorDocena;
+                return this._IsReadOnlyPrecioPorDocena;
             }
             set
             {
@@ -284,7 +284,7 @@ namespace ProyectoFinal.ModelView
         {
             get
             {
-                return _IsReadOnlyPrecioPorMayor;
+                return this._IsReadOnlyPrecioPorMayor;
             }
             set
             {
@@ -297,7 +297,7 @@ namespace ProyectoFinal.ModelView
         {
             get
             {
-                return _IsReadOnlyExistencia;
+                return this._IsReadOnlyExistencia;
             }
             set
             {
@@ -310,7 +310,7 @@ namespace ProyectoFinal.ModelView
         {
             get
             {
-                return _IsReadOnlyImagen;
+                return this._IsReadOnlyImagen;
             }
             set
             {

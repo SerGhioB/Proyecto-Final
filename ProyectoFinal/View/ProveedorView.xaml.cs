@@ -18,7 +18,7 @@ namespace ProyectoFinal.View
     /// <summary>
     /// Interaction logic for ProveedorView.xaml
     /// </summary>
-    public partial class ProveedorView : Window
+    public partial class ProveedorView
     {
         public ProveedorView()
         {

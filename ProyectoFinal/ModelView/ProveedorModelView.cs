@@ -64,7 +64,7 @@ namespace ProyectoFinal.ModelView
             {
                 if (value != null)
                 {
-                    this.SelectProveedor = value;
+                    this._SelectProveedor = value;
                     this.Nit = value.Nit;
                     this.RazonSocial = value.RazonSocial;
                     this.Direccion = value.Direccion;

@@ -11,6 +11,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -24,10 +25,12 @@
         <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyNombre}" Text="{Binding Nombre}"/>
         <Label Content="Direccion" Grid.Row="2" Grid.Column="0"/>
         <TextBox Grid.Row="2" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyDireccion}" Text="{Binding Direccion}"/>
+        <Label Content="Nit" Grid.Row="3" Grid.Column="0"/>
+        <TextBox Grid.Row="3" Grid.Column="1" IsReadOnly="{Binding IsReadOnlyNit}" Text="{Binding Nit}"/>
 
-        <DataGrid SelectedItem="{Binding SelectCliente}" ItemsSource="{Binding Clientes}" Grid.Row="3" Grid.ColumnSpan="2">
+        <DataGrid SelectedItem="{Binding SelectCliente}" ItemsSource="{Binding Clientes}" Grid.Row="4" Grid.ColumnSpan="2">
         </DataGrid>
-        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal">
+        <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal">
             <Button IsEnabled="{Binding IsEnableAdd}" Content="Add" Command="{Binding Instancia}" CommandParameter="Add"/>
             <Button IsEnabled="{Binding IsEnableDelete}" Content="Delete" Command="{Binding Instancia}" CommandParameter="Delete"/>
             <Button IsEnabled="{Binding IsEnableUpdate}" Content="Update" Command="{Binding Instancia}" CommandParameter="Update "/>

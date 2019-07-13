@@ -16,9 +16,11 @@ namespace ProyectoFinal.ModelView
 
     class ClienteModelView : INotifyPropertyChanged, ICommand
     {
+        private string _Nit;
         private string _DPI;
         private string _Nombre;
         private string _Direccion;
+        private bool _IsReadOnlyNit = false;
         private bool _IsReadOnlyDPI = false;
         private bool _IsReadOnlyNombre = false;
         private bool _IsReadOnlyDireccion = false;
@@ -61,6 +63,7 @@ namespace ProyectoFinal.ModelView
                 if (value != null)
                 {
                     this._SelectCliente = value;
+                    this.Nit = value.Nit;
                     this.DPI = value.DPI;
                     this.Nombre = value.Nombre;
                     this.Direccion = value.Direccion;
@@ -91,6 +94,19 @@ namespace ProyectoFinal.ModelView
         {
             get;
             set;
+        }
+
+        public string Nit
+        {
+            get
+            {
+                return _Nit;
+            }
+            set
+            {
+                this._Nit = value;
+                ChangeNotify("Nit");
+            }
         }
 
         public string DPI
@@ -129,6 +145,19 @@ namespace ProyectoFinal.ModelView
             {
                 this._Direccion = value;
                 ChangeNotify("Direccion");
+            }
+        }
+
+        public bool IsReadOnlyNit
+        {
+            get
+            {
+                return this._IsReadOnlyNit;
+            }
+            set
+            {
+                this._IsReadOnlyNit = value;
+                ChangeNotify("IsReadOnlyNit");
             }
         }
 
@@ -192,6 +221,7 @@ namespace ProyectoFinal.ModelView
                 //MessageBox.Show("Agregar Departamento");                                
                 //this.accion = ACCION.NUEVO;  
                 Cliente nuevo = new Cliente();
+                nuevo.Nit = this.Nit;
                 nuevo.DPI = this.DPI;
                 nuevo.Nombre = this.Nombre;
                 nuevo.Direccion = this.Direccion;
@@ -216,6 +246,7 @@ namespace ProyectoFinal.ModelView
 
                 int posicion = this.Clientes.IndexOf(this.SelectCliente);
                 var updateCliente = this.db.Clientes.Find(this.SelectCliente.Nit);
+                updateCliente.Nit = this.Nit;
                 updateCliente.DPI = this.DPI;
                 updateCliente.Nombre = this.Nombre;
                 updateCliente.Direccion = this.Direccion;

@@ -58,7 +58,7 @@ namespace ProyectoFinal.ModelView
             {
                 if (value != null)
                 {
-                    this.SelectEmailCliente = value;
+                    this._SelectEmailCliente = value;
                     this.Email = value.Email;
                     this.Nit = value.Nit;
                     ChangeNotify("SelectEmailCliente");

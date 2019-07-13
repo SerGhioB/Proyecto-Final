@@ -72,7 +72,7 @@ namespace ProyectoFinal.ModelView
             {
                 if (value != null)
                 {
-                    this.SelectProducto = value;
+                    this._SelectProducto = value;
                     this.CodigoCategoria = value.CodigoCategoria.ToString();
                     this.CodigoEmpaque = value.CodigoEmpaque.ToString();
                     this.Descripcion = value.Descripcion;

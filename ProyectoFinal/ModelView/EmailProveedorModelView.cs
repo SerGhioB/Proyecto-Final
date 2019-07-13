@@ -56,7 +56,7 @@ namespace ProyectoFinal.ModelView
             {
                 if (value != null)
                 {
-                    this.SelectEmailProveedor = value;
+                    this._SelectEmailProveedor = value;
                     this.Email = value.Email;
                     this.CodigoProveedor = value.CodigoProveedor.ToString();
                     ChangeNotify("SelectEmailProveedor");
